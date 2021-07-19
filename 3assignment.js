@@ -69,11 +69,9 @@ function megaFriend(friendsName) {
   }
   if (largestName == undefined) {
     return "please fill the gap of names";
-  } else if (friendsName == Number) {
-    return "invalid input";
   }
   return largestName;
 }
 
-var result = megaFriend(4);
+var result = megaFriend("");
 console.log(result);
