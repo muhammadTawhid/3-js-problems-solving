@@ -67,8 +67,13 @@ function megaFriend(friendsName) {
       largestName = element;
     }
   }
+  if (largestName == undefined) {
+    return "please fill the gap of names";
+  } else if (friendsName == Number) {
+    return "invalid input";
+  }
   return largestName;
 }
 
-var result = megaFriend(["a", "ab", "abc", "abcd", "ABCDEF", "abcde"]);
+var result = megaFriend(4);
 console.log(result);
